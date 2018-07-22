@@ -8,7 +8,6 @@ import xml.etree.ElementTree as ElementTree
 import base64
 import boto3
 import os
-import sys
 
 import ipify
 
