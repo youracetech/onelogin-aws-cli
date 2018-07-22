@@ -8,6 +8,7 @@ import xml.etree.ElementTree as ElementTree
 import base64
 import boto3
 import os
+import sys
 
 import ipify
 
@@ -190,6 +191,15 @@ class OneloginAWS(object):
         print("Credentials cached in '{}'".format(cred_file))
         print("Expires at {}".format(creds["Expiration"]))
         print("Use aws cli with --profile " + name)
+   
+
+        print ("-----------------------------------------------------------------------\n")
+        print ("Temporary AWS Credentials Granted via OneLogin\n\nCopy/Paste to set these as environment variables\n")
+        print ("-----------------------------------------------------------------------")
+            
+        print ("export AWS_ACCESS_KEY_ID=" + creds["AccessKeyId"])
+        print ("export AWS_SECRET_ACCESS_KEY=" + creds["SecretAccessKey"])
+        print ("export AWS_SESSION_TOKEN=" + creds["SessionToken"])
 
         # Reset state in the case of another transaction
         self.credentials = None
