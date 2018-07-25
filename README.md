@@ -227,7 +227,16 @@ And to use the `live-admin` config, you could run:
 $ onelogin-aws-login -C live-admin
 ```
 
+You can also create custom [profiles] in ~./aws/credentials using the `--profile` argument
 
+```shell
+$ onelogin-aws-login -C staging --profile staging
+```
+
+Switching between the profiles:
+```shell
+$ export AWS_PROFILE=staging
+```
 
 ## Developing onelogin-aws-cli
 
