@@ -17,17 +17,17 @@ This package provides a CLI utility program that:
 In order to be able to use this program, you must first
 [Configure SAML for AWS in OneLogin][onelogin-configuring-saml-for-aws].
 
-Note that while the repo and the pip package are called `onelogin-aws-cli`,
+Note that while the repo and the pip3 package are called `onelogin-aws-cli`,
 the installed program is called `onelogin-aws-login`.
 
 
 
 ## Installation
 
-To install, use pip:
+To install, use pip3:
 
 ```shell
-$ pip install onelogin-aws-cli
+$ pip3 install onelogin-aws-cli
 ```
 
 Note that `onelogin-aws-cli` requires Python 3.
